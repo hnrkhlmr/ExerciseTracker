@@ -1,0 +1,14 @@
+*.dll
+*.xml
+*.mdf
+
+*.nupkg
+*.psd1
+*.psm1
+ExerciseTracker/obj/
+packages/
+*.ldf
+ExerciseTracker.Tests/bin/
+ExerciseTracker.Tests/obj/
+ExerciseTracker/bin/
+*.suo

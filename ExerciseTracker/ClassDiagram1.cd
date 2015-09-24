@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ExerciseTracker.Models.Workout">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAACAAAAAAEAAAAAAAAAAAABAgAAAAAAAAA=</HashCode>
+      <FileName>Models\Workout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExerciseTracker.Models.WorkoutExercise">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WorkoutExcercise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExerciseTracker.Models.Set">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Set.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExerciseTracker.Models.Exercise">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Excercise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
