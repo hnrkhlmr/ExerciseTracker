@@ -19,7 +19,13 @@ namespace ExerciseTracker.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            //modelBuilder.Entity();
+            modelBuilder.Entity<Workout>()
+                .H;
+
+            //modelBuilder.Entity<ApplicationUser>()
+            //    .HasMany(u => u.Assignments).WithRequired(i => i.AssignedTo);
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
