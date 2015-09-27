@@ -27,6 +27,32 @@ namespace ExerciseTracker.Migrations
             exercises.ForEach(e => context.Exercises.AddOrUpdate(p => p.Id, e));
             context.SaveChanges();
 
+            var workout = new Workout
+            {
+                Date = DateTime.Now.AddDays(-15),
+                Duration = DateTime.Now - DateTime.Now.AddHours(-1),
+                Id = Guid.NewGuid(),
+                WorkoutType = "Styrketräning"
+            };
+
+            context.Workouts.Add(workout);
+            var workoutExercises = new List<WorkoutExercise> { 
+                        new WorkoutExercise { Id = Guid.NewGuid(), 
+                            Exercise = exercises[0], 
+                            Sets = { new Set { Id = Guid.NewGuid(), Reps = 20, Weight = 0 },
+                                    new Set { Id = Guid.NewGuid(), Reps = 20, Weight = 0 },
+                                    new Set { Id = Guid.NewGuid(), Reps = 20, Weight = 0 }
+                                }
+                        },
+                        new WorkoutExercise { Id = Guid.NewGuid(), 
+                            Exercise = exercises[1], 
+                            Sets = { new Set { Id = Guid.NewGuid(), Reps = 20, Weight = 0 },
+                                    new Set { Id = Guid.NewGuid(), Reps = 20, Weight = 0 },
+                                    new Set { Id = Guid.NewGuid(), Reps = 20, Weight = 0 }
+                                }
+                        },                                
+                    };
+
             var workouts = new List<Workout>
             {
                 new Workout { Date = DateTime.Now.AddDays(-15), 
