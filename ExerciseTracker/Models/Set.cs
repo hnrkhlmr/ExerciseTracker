@@ -9,6 +9,7 @@ namespace ExerciseTracker.Models
     public class Set
     {
         public Guid Id { get; set; }
+        public Guid WorkoutExerciseId { get; set; }
         [Required]        
         public int Reps { get; set; }
         [Required]

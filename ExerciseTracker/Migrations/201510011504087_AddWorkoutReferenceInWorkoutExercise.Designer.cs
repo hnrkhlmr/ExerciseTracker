@@ -5,18 +5,18 @@ namespace ExerciseTracker.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class NewUpdates : IMigrationMetadata
+    public sealed partial class AddWorkoutReferenceInWorkoutExercise : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(NewUpdates));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddWorkoutReferenceInWorkoutExercise));
         
         string IMigrationMetadata.Id
         {
-            get { return "201509271933564_NewUpdates"; }
+            get { return "201510011504087_AddWorkoutReferenceInWorkoutExercise"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return Resources.GetString("Source"); }
+            get { return null; }
         }
         
         string IMigrationMetadata.Target

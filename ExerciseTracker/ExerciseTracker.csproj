@@ -204,9 +204,13 @@
     <Compile Include="Infrastructure\IoC.cs" />
     <Compile Include="Infrastructure\StandardRegistry.cs" />
     <Compile Include="Infrastructure\StructureMapDependencyResolver.cs" />
-    <Compile Include="Migrations\201509160628041_InitialCreate.cs" />
-    <Compile Include="Migrations\201509160628041_InitialCreate.Designer.cs">
-      <DependentUpon>201509160628041_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201509290638334_InitialMigration.cs" />
+    <Compile Include="Migrations\201509290638334_InitialMigration.Designer.cs">
+      <DependentUpon>201509290638334_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510011504087_AddWorkoutReferenceInWorkoutExercise.cs" />
+    <Compile Include="Migrations\201510011504087_AddWorkoutReferenceInWorkoutExercise.Designer.cs">
+      <DependentUpon>201510011504087_AddWorkoutReferenceInWorkoutExercise.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
@@ -278,6 +282,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="Migrations\EF6Migrations.md" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -338,14 +343,16 @@
     <Content Include="Views\Workout\Edit.cshtml" />
     <Content Include="Views\Workout\Delete.cshtml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="packages.config" />
+    <EmbeddedResource Include="Migrations\201509290638334_InitialMigration.resx">
+      <DependentUpon>201509290638334_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510011504087_AddWorkoutReferenceInWorkoutExercise.resx">
+      <DependentUpon>201510011504087_AddWorkoutReferenceInWorkoutExercise.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201509160628041_InitialCreate.resx">
-      <DependentUpon>201509160628041_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
